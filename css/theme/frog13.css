@@ -8,7 +8,7 @@ html * {
   rendering-intent: auto; }
 
 body {
-  background: url("../../bg/dot.png") #268bd2 0 0 repeat; }
+  background: url("../../img/dot.png") #268bd2 0 0 repeat; }
 
 .reveal {
   font-family: "Yanone Kaffeesatz", sans-serif;
@@ -23,7 +23,7 @@ body {
   text-shadow: none; }
 
 .reveal .state-background {
-  background-image: url(../../bg/1-bl.png);
+  background-image: url(../../img/1-bl.png);
   background-position: bottom left;
   background-repeat: no-repeat;
   background-size: 100% auto; }

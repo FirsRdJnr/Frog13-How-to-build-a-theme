@@ -1,0 +1,68 @@
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  color: white;
+}
+.reveal section {
+  height: 800px;
+}
+.reveal section h2 {
+  font-size: 5em;
+  margin-bottom: 0 auto;
+  text-align: center;
+}
+.reveal section h2 span {
+  color: #b3e0fd;
+  display: block;
+  font-size: 0.7em;
+  line-height: 0.9em;
+}
+.reveal section#flex-intro,
+.reveal section#opt-intro,
+.reveal section#structure-intro,
+.reveal section#compat-intro {
+  margin-top: 100px;
+}
+.reveal section#flex-intro h2,
+.reveal section#opt-intro h2,
+.reveal section#structure-intro h2,
+.reveal section#compat-intro h2 {
+  font-size: 7em;
+}
+.reveal section#lets-build {
+  margin-top: 100px;
+}
+.reveal section#lets-build h2 {
+  font-size: 10em;
+}
+.reveal section#welcome {
+  text-align: center;
+  margin-top: 100px;
+}
+.reveal section .info {
+  color: white;
+  font-size: 2em;
+  line-height: 1.2;
+}
+.reveal .progress {
+  height: 7px;
+}
+.reveal .progress span {
+  background: #182449;
+  /*border-top: 2px solid #0B83C6;*/
+
+}
+.modal {
+  position: absolute;
+  background: none;
+  border: 4px solid #e8632c;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  /*img {
+        width: 1280px;
+        height: 1024px;
+    }*/
+
+}
