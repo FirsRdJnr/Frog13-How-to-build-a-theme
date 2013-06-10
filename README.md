@@ -43,7 +43,6 @@
 *To help FrogOS run effectively, we need to be careful what we put in there.*
 
 ###Avoid large background images
-
 - Slow load times
 - Problems switching between themes
 - Compression software, like <a href="http://kraken.io/">kraken</a>
@@ -54,7 +53,6 @@
 * Optimise your image as best you can to keep file sizes low, Kraken is a great example of an online image compression tool.
 
 ###File sizes
-
 - Combined files 800kb or lower
 - Need to be packaged up
 
@@ -63,7 +61,6 @@
 * We can’t restrict how people will download a theme, so we may need to send these themes over wifi to mobile devices, so the smaller you can make a theme, the better.
 
 ###Embed custom fonts
-
 - Font Squirrel generator
 - Download and embed Google fonts
 - Header base sizes
@@ -74,7 +71,6 @@
 * Remember, fonts have different base sizes, which means you must check that the overall size of text that uses the font are legible.
 
 ###CSS over Images
-
 - CSS box shadows, rounded corners & more css3generator.com
 - CSS gradients Ultimate CSS Gradient Generator
 
@@ -86,7 +82,6 @@
 *A Theme's directory is system generated and is stored in FrogOS/internal/theme/theme folder/. The Theme is then called using JavaScript within FrogOS. In a theme directory there is no support for subfolders so all images etc. need to be in the root folder - this will be changing soon.*
 
 ###.ejs = embedded javascript
-
 - Combines data and a template to produce HTML
 - This type of file is readable by FrogOS
 
@@ -94,7 +89,6 @@
 * An .ejs file compiles the HTML and CSS that makes up a theme into a readable file for FrogOS. It's still easier to build in HTML & CSS so you can view your work, then add both to an ejs file later.
 
 ###Build in LESS for scoped CSS
-
 - Use LESS if you can.
 - Crunch is a great Less compiler
 - CSS should always have a unique wrapper class
@@ -104,7 +98,6 @@
 * It’s paramount that each theme has a unique class that wraps all the content like .ui-theme-frog13. Themes can be switched out for other themes, but browsers cache images and css, so if you have the same class name as another theme, the browser will render it with the previous css and images.
 
 ###Navigation
-
 - Cheat!
 - No unique classes
 - Remember the + page tab
@@ -115,7 +108,6 @@
 * It’s useful to have the add page function in a different colour to normal navigation so it’s easy for a user to identify what it is.
 
 ###Theme builder
-
 - Download
 - Host
 - Run
@@ -129,7 +121,6 @@ You can try running a localhost, such as xampp <a href="http://www.apachefriends
 *Compatibility with widgets, FrogOS and the theme itself.*
 
 ###Text colours
-
 - White text on white backgrounds
 - Widget colours
 
@@ -138,7 +129,6 @@ You can try running a localhost, such as xampp <a href="http://www.apachefriends
 * Widgets have different coloured headers and can be overridden by accident, avoid using the !important selector in CSS.
 
 ###No javascript
-
 - Frog OS is built with Javascript
 - Conflicts
 - Use classes not ids
@@ -148,7 +138,6 @@ You can try running a localhost, such as xampp <a href="http://www.apachefriends
 * Use classes only, FrogOS’ Javascript is based on ids so we avoid them in themes so it doesn't conflict with the interface.
 
 ###Browser support
-
 - No more IE7!
 - All CSS2 & most CSS3 supported
 - Graceful degradation
