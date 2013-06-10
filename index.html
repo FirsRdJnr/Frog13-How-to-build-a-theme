@@ -39,7 +39,14 @@
             <h2>How to build a FrogOS Theme</h2>
             <h3>FrogOS Advanced</h3>
             <p>Victoria Baron | Front End Interface Architect | <a href="https://twitter.com/VBaronFrog" class="roll"><span data-title="@VBaronFrog">@VBaronFrog</span></a></p>
-            <aside class="notes" data-markdown=""><p>Here are some notes oh yes here are some notes</p>
+            <aside class="notes">
+                <ul>
+                    <strong>NOTES</strong>
+                    <li>Introduction to what I do.</li>
+                    <li>Audience expectations (basic knowledge of CSS & HTML).</li>
+                    <li>Quickly going to go through the basics.</li>
+                    <li>Then I'm going to attempt to build a theme, LIVE, where I'll be taking questions as I go along, I'll also be around after the session if you have any questions.</li>
+                </ul>
             </aside>
         </section><!-- /welcome -->
 
@@ -47,14 +54,9 @@
         ================================================== -->
         <section id="flexibility">
             <section id="flex-intro">
-                <h2>Flexibility <span>scrolling images, expanding content</span></h2>
+                <h2>Flexibility <span>scrolling, images, expanding content</span></h2>
                 <aside class="notes">
-                    <ul>
-                        <li>Introduction to what I do.</li>
-                        <li>Audience expectations (basic knowledge of CSS & HTML).</li>
-                        <li>Quickly going to go through the basics.</li>
-                        <li>Then I'm going to attempt to build a theme, LIVE, where I'll be taking questions as I go along, I'll also be around after the session if you have any questions.</li>
-                    </ul>
+                    <p><strong>NOTES</strong><br>Frogos has been built for an array of devices, so flexibility is key.</p>
                 </aside>
             </section><!-- /flex-intro -->
 
@@ -63,19 +65,19 @@
                 <ul class="info">
                     <li>Don’t make your theme fixed</li>
                     <li>Test on different browser sizes</li>
-                    <li>Frog touch scrolling</li>
+                    <li>Touch .frog-touch-scroll</li>
                 </ul>
                 <div class="thumbs">
                     <a href="#" id="open-modal1"><img class="big-img" src="img/screenshots/structure-less.png"></a>
                 </div>
                 <aside class="notes">
                     <ul>
-                        <li>if you make your content 100px heigh, it won't</li>
-                        <li>Audience expectations (basic knowledge of CSS & HTML).</li>
-                        <li>Quickly going to go through the basics.</li>
-                        <li>Then I'm going to attempt to build a theme, LIVE, where I'll be taking questions as I go along, I'll also be around after the session if you have any questions.</li>
+                        <strong>NOTES</strong>
+                        <li>You can't account for the size of content that will need to go in a site, or the size of browser someone will be looking at it in.</li>
+                        <li>If you make your content 1000px high, it won't fit on an iPad screen, but if you make it 600px height then it’ll get lost on a hi-res display.</li>
+                        <li>Make sure you test on different browser sizes, Chrome has a tool you can use to change the aspect ratios of the browser for different devices.</li>
+                        <li>.frog-touch-scroll is a class that is added so that FrogOS works on touch devices, as this is where the markets going, it’s important that we support this technology.</li>
                     </ul>
-                    <p>you can't account for the size of content that will need to go in it, or the size of browser someone will be look at it in.</p>
                 </aside>
             </section><!-- /flex-scrolling -->
 
@@ -87,7 +89,12 @@
                     <li>Be careful with fixed images overlapping content</li>
                 </ul>
                 <aside class="notes">
-                    <p>Some areas that have background images may need to expand to accommodate text/titles and content, you need to make sure that the bg images repeat and don't break.</p>
+                    <ul>
+                        <strong>NOTES</strong>
+                        <li>Some areas that have background images may need to expand to accommodate text/titles and content, you need to make sure that the bg images repeat and don't break.</li>
+                        <li>We've had situations where a header image wasn't long enough to accommodate a long title so as the title grew the text continued onto a white background.</li>
+                        <li>Fixed images can be used, but be careful of using z-index and positions as we've had images interfering with widgets within a site if not done well.</li>
+                    </ul>
                 </aside>
             </section><!-- /flex-images -->
 
@@ -95,11 +102,16 @@
                 <h2>Expanding content</h2>
                 <ul class="info">
                     <li>Content is predicted by the user</li>
-                    <li>Headers</li>
-                    <li>Content</li>
+                    <li>Headers - long words</li>
+                    <li>Content - 300px 3 columns</li>
                 </ul>
                 <aside class="notes">
-                    <p>The content and header areas can be small or large, depending on how people use a site, so make sure you test for both.</p>
+                    <ul>
+                        <strong>NOTES</strong>
+                        <li>Content is added by the user, it could be one widget and a one line header, or it could be a whole website with content. So you must make sure that your design is flexible enough to accommodate both.</li>
+                        <li>We had some issues with long words not wrapping; there's a simple CSS class you can add, word-wrap:break-word; this will make sure that headers won't break your layout.</li>
+                        <li>Content areas can have 1,2 or 3 columns or a mixture of all three, this means that keeping the content are to no smaller than 960px is necessary for the smallest column size to be 300px. </li>
+                    </ul>
                 </aside>
             </section><!-- /flex-expand -->
         </section><!-- /flexibility -->
@@ -110,7 +122,7 @@
             <section id="opt-intro">
                 <h2>Optimization <span>image sizes, using fonts, CSS gradients</span></h2>
                 <aside class="notes">
-                    <p>To help FrogOS run effectively, we need to be careful what we put in there.</p>
+                    <p><strong>NOTES</strong><br>To help FrogOS run effectively, we need to be careful what we put in there.</p>
                 </aside>
             </section><!-- /opt-intro -->
 
@@ -122,7 +134,12 @@
                     <li>Compression software, like <a href="http://kraken.io/">kraken</a></li>
                 </ul>
                 <aside class="notes">
-                    <p>Load times, iPad loading images - feedback on one forum suggest that you preload large .png files as this is where iPads fall down, but, unfortunately, we can’t preload images in themes.</p>
+                    <ul>
+                        <strong>NOTES</strong>
+                        <li>The larger the image,the longer it'll take to load, especially on iPads</li>
+                        <li>as themes are dynamically loaded, we can't preload images like we do in the rest of the platform</li>
+                        <li>Optimise your image as best you can to keep file sizes low, Kraken is a great example of an online image compression tool.</li>
+                    </ul>
                 </aside>
             </section><!-- /opt-images -->
 
@@ -133,7 +150,11 @@
                     <li>Need to be packaged up</li>
                 </ul>
                 <aside class="notes">
-                    <p>All files, including images, in a theme folder should not exceed 800kb, we need to send these themes, sometimes over wifi to mobile devices, so the smaller you can make a theme, the better.</p>
+                    <ul>
+                        <strong>NOTES</strong>
+                        <li>All files, including images, in a theme folder should not exceed 800kb, </li>
+                        <li>We can't restrict how people will download a theme, so we may need to send these themes over wifi to mobile devices, so the smaller you can make a theme, the better.</li>
+                    </ul>
                 </aside>
             </section><!-- /opt-filesizes -->
 
@@ -145,19 +166,27 @@
                     <li>Header base sizes</li>
                 </ul>
                 <aside class="notes">
-                    <p>Don't link to them from the web. Google fonts, or fonts you’ve bought can be turned into webfonts easily by using an online font generator like http://www.fontsquirrel.com/tools/webfont-generator. Different browsers require different font types to render the text. Remember, fonts have different base sizes, which means you must check that the overall size of text that uses the font are legible.</p>
+                    <ul>
+                        <strong>NOTES</strong>
+                        <li>Don't link to them from the web. Google fonts, or fonts you've bought can be turned into webfonts easily by using an online font generator </li>
+                        <li>Different browsers require different font types to render the text.</li>
+                        <li>Remember, fonts have different base sizes, which means you must check that the overall size of text that uses the font are legible.</li>
+                    </ul>
                 </aside>
             </section><!-- /opt-fonts -->
 
             <section id="opt-css">
                 <h2>CSS over Images</h2>
                 <ul class="info">
-                    <li>CSS box shadows & more <a href="http://css3generator.com/">css3generator.com</a></li>
-                    <li>CSS gradients <a href="http://www.colorzilla.com/gradient-editor/">Ultimate CSS Gradient Generator</a></li>
-                    <li>Header base sizes</li>
+                    <li>CSS box shadows, rounded corners &amp; more<a href="http://css3generator.com/"> css3generator.com</a></li>
+                    <li>CSS gradients<a href="http://www.colorzilla.com/gradient-editor/"> Ultimate CSS Gradient Generator</a></li>
                 </ul>
                 <aside class="notes">
-                    <p>Use css gradients and box shadows instead of background images, CSS file sizes are vastly smaller than images and can achieve nicer results than using a low res image.</p>
+                    <ul>
+                        <strong>NOTES</strong>
+                        <li>Use css gradients and box shadows instead of background images, CSS file sizes are vastly smaller than images and can achieve nicer results than using a low res image.</li>
+                        <li>These two websites are great to use to generate the CSS that is compatible across all browsers.</li>
+                    </ul>
                 </aside>
             </section><!-- /opt-css -->
         </section><!-- /optimization -->
@@ -167,9 +196,8 @@
         <section id="structure">
             <section id="structure-intro">
                 <h2>Structure <span>.EJS, HTML, CSS, LESS, Navigation, Theme builder</span></h2>
-
                 <aside class="notes">
-                    <p>A Theme's directory is system generated and is stored in FrogOS/internal/theme/theme folder/. The Theme is then called using JavaScript within FrogOS. In a theme directory there is no support for subfolders so all images etc. need to be in the root folder - this will be changing soon.</p>
+                    <p><strong>NOTES</strong><br />A Theme's directory is system generated and is stored in FrogOS/internal/theme/theme folder/. The Theme is then called using JavaScript within FrogOS. In a theme directory there is no support for subfolders so all images etc. need to be in the root folder - this will be changing soon.</p>
                 </aside>
             </section><!-- /structure-intro -->
 
@@ -177,10 +205,13 @@
                 <h2>.ejs = embedded javascript</h2>
                 <ul class="info">
                     <li>Combines data and a template to produce HTML</li>
-                    <li>JavaScript between <%= %> adds HTML to the result.</li>
+                    <li>This type of file is readable by FrogOS</li>
                 </ul>
                 <aside class="notes">
-                    <p>An .ejs file compiles the HTML and CSS that makes up a theme into a readable file for FrogOS. It's still easier to build in HTML & CSS so you can view your work, then add both to an ejs file later.</p>
+                    <ul>
+                        <strong>NOTES</strong>
+                        <li>An .ejs file compiles the HTML and CSS that makes up a theme into a readable file for FrogOS. It's still easier to build in HTML &amp; CSS so you can view your work, then add both to an ejs file later.</li>
+                    </ul>
                 </aside>
             </section><!-- /structure-ejs -->
 
@@ -188,40 +219,15 @@
                 <h2>Build in LESS for scoped CSS</h2>
                 <ul class="info">
                     <li><a href="http://lesscss.org/">Use LESS</a> if you can.</li>
-                    <li>Nested Rules</li>
                     <li><a href="http://crunchapp.net/">Crunch</a> is a great Less compiler</li>
+                    <li>CSS should always have a unique wrapper class</li>
                 </ul>
-                <pre><code>
-.reveal {
-    h1, h2, h3, h4, h5, h6 {
-        color: #FFFFFF;
-    }
-    section {
-        height: 800px;
-
-        h2 {
-            font-size: 5em;
-            margin-bottom: 0 auto;
-            text-align: center;
-
-            span {
-                color: #B3E0FD;
-                display: block;
-                font-size: 0.7em;
-                line-height: 0.9em;
-            }
-        }
-        &#lets-build {
-            margin-top: 100px;
-            h2 {
-                font-size: 10em;
-            }
-        }
-    }
-}</code>
-                </pre>
                 <aside class="notes">
-                    <p>Rather than constructing long selector names to specify inheritance, in Less you can simply nest selectors inside other selectors. This makes inheritance clear and style sheets shorter.</p>
+                    <ul>
+                        <strong>NOTES</strong>
+                        <li>Rather than constructing long selector names to specify inheritance, in Less you can simply nest selectors inside other selectors. This makes inheritance clear and style sheets shorter.</li>
+                        <li>It&rsquo;s paramount that each theme has a unique class that wraps all the content like .ui-theme-frog13. Themes can be switched out for other themes, but browsers cache images and css, so if you have the same class name as another theme, the browser will render it with the previous css and images.</li>
+                    </ul>
                 </aside>
             </section><!-- /structure-LESS -->
 
@@ -230,10 +236,15 @@
                 <ul class="info">
                     <li>Cheat!</li>
                     <li>No unique classes</li>
-                    <li>Remember the + page</li>
+                    <li>Remember the + page tab</li>
                 </ul>
                 <aside class="notes">
-                    <p>This is the trickiest part of any theme. As navigation much like the content and user generated, this means that each link has a unique ID generated by the system that we can’t predict in a theme. This means that you have to target levels of navigation by the UL class, data-menu-level="2" for example. You can also choose from two types of navigation, so you could have a nested navigation (where all the navigation is together), or you could choose to have 3 sets of individual navigation set out thorough the theme - there are no working examples of this in FrogOS as it will require a certain type of design, but this is the closest approximation we’d have to it being used. Userful to have the add page function in a different colour to normal.</p>
+                    <ul>
+                        <strong>NOTES</strong>
+                        <li>This is the trickiest part of any theme. As navigation is much like content and is user generated, this means that each link has a unique ID generated by the system that we can&rsquo;t predict in a theme. This means that you have to target levels of navigation by the UL class, data-menu-level=&quot;2&quot; for example.</li>
+                        <li>You can also choose from two types of navigation, so you could have a nested navigation (where all the navigation is together), or you could choose to have 3 sets of individual navigation set out thorough the theme - there are no working examples of this in FrogOS as it will require a certain type of design, but this is the closest approximation we&rsquo;d have to it being used. </li>
+                        <li>It&rsquo;s useful to have the add page function in a different colour to normal navigation so it&rsquo;s easy for a user to identify what it is. </li>
+                    </ul>
                 </aside>
             </section><!-- /structure-nav -->
 
@@ -245,7 +256,12 @@
                     <li>Run</li>
                 </ul>
                 <aside class="notes">
-                    <p>As this is a dynamic tool, it will need to be hosted on your frog server, it comes with install walkthrough.</p>
+                    <ul>
+                        <strong>NOTES</strong>
+                        <li>This is a dynamic tool and will need to be hosted on a server for it to work, This is due to the nature of how all the components are dynamically brought together…it&rsquo;s basically a copy of how FrogOS works.</li>
+                        <li>You can try running a localhost, such as xampp (<a href="http://www.apachefriends.org/en/xampp.html">http://www.apachefriends.org/en/xampp.html</a>). This will create a folder on your system and treat it like a server.</li>
+                        <li>Download the Boilerplate on the themes guide (<a href="http://designguide.frogtrade.com/themes.html">http://designguide.frogtrade.com/themes.html</a>).</li>
+                    </ul>
                 </aside>
             </section><!-- /structure-themebuilder -->
         </section><!-- /structure -->
@@ -256,7 +272,7 @@
             <section id="compat-intro">
                 <h2>Compatibility <span>colours, backgrounds graceful degradation</span></h2>
                 <aside class="notes">
-                    <p>Compatibility with widgets, FrogOS and the theme itself.</p>
+                    <p><strong>NOTES</strong><br>Compatibility with widgets, FrogOS and the theme itself.</p>
                 </aside>
             </section><!-- /compat-intro -->
 
@@ -267,7 +283,11 @@
                     <li>Widget colours</li>
                 </ul>
                 <aside class="notes">
-                    <p>Keep in mind the content background colour when adding text styles there has been issues with white text on white backgrounds. Widgets have different colourd headers and can be overriden by accident.</p>
+                    <ul>
+                        <strong>NOTES</strong>
+                        <li>Keep in mind the content background colour when adding text styles there has been issues with white text on white backgrounds.</li>
+                        <li>Widgets have different coloured headers and can be overridden by accident, avoid using the !important selector in CSS.</li>
+                    </ul>
                 </aside>
             </section><!-- /compat-colours -->
 
@@ -276,10 +296,14 @@
                 <ul class="info">
                     <li>Frog OS is built with Javascript</li>
                     <li>Conflicts</li>
-                    <li>Use classes not ids</li>
+                    <li>Use .classes not #ids</li>
                 </ul>
                 <aside class="notes">
-                    <p>As FrogOS’s interface is built using JS, we can’t allow custom scripts as we won't know how this will interact with existing JS on the page</p>
+                    <ul>
+                        <strong>NOTES</strong>
+                        <li>As FrogOS&rsquo;s interface is built using JS, we can&rsquo;t allow custom scripts as we won't know how this will interact with existing JS on the page.</li>
+                        <li>Use classes only, FrogOS&rsquo; Javascript is based on ids so we avoid them in themes so it doesn't conflict with the interface.</li>
+                    </ul>
                 </aside>
             </section><!-- /compat-nojs -->
 
@@ -287,24 +311,20 @@
                 <h2>Browser support</h2>
                 <ul class="info">
                     <li>No more IE7!</li>
-                    <li>All CSS2 & most CSS3 supported</li>
+                    <li>All CSS2 &amp; most CSS3 supported</li>
                     <li>Graceful degradation</li>
-                    <li>Basically...avoid IE</li>
+                    <li>Basically...avoid IE </li>
                 </ul>
                 <aside class="notes">
-                    <p>JS was unstable in ie7 and as such, we moved away from this. This also means that most CSS2 styles will work with the platform, there are issues with CSS3 in ie8, but we encourage graceful degradation.</p>
+                    <ul>
+                        <strong>NOTES</strong>
+                        <li>JS was unstable in ie7 and as such, we moved away from this. </li>
+                        <li>This also means that most CSS2 styles will work with the platform, there are issues with CSS3 in ie8, but we encourage graceful degradation, which means that we don't support rounded corners or box shadows in ie8.</li>
+                    </ul>
                 </aside>
             </section><!-- /compat-nav -->
         </section><!-- /compatibility -->
 
-        <!-- Lets build!
-        ================================================== -->
-        <section id="lets-build">
-            <h2>Lets build!</h2>
-                <aside class="notes">
-                    <p>Here are some notes oh yes here are some notes</p>
-                </aside>
-        </section><!-- /lets-build -->
     </div><!-- /slides -->
     <div class="progress" style="display: block;"><span></span></div>
 </div><!-- /reveal -->
