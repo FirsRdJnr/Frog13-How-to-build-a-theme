@@ -63,13 +63,16 @@
             <section id="flex-scrolling">
                 <h2>Scrolling</h2>
                 <ul class="info">
-                    <li>Don’t make your theme fixed</li>
-                    <li>Test on different browser sizes</li>
-                    <li>Touch .frog-touch-scroll</li>
+                    <li class="fragment fade-in">Don’t make your theme fixed</li>
+                    <div class="thumbs fragment zoom-in hideafter">
+                        <img class="landscape" src="img/screenshots/background-fixed-ipad.png" width="1150" height="890">
+                    </div>
+                    <li class="fragment fade-in">Test on different browser sizes</li>
+                    <li class="fragment fade-in">Touch .frog-touch-scroll</li>
+                    <div class="thumbs fragment zoom-in hideafter">
+                        <img class="big-img" src="img/screenshots/code-frog-touch-scroll.gif">
+                    </div>
                 </ul>
-                <div class="thumbs">
-                    <a href="#" id="open-modal1"><img class="big-img" src="img/screenshots/structure-less.png"></a>
-                </div>
                 <aside class="notes">
                     <ul>
                         <strong>NOTES</strong>
@@ -84,9 +87,12 @@
             <section id="flex-images">
                 <h2>Images</h2>
                 <ul class="info">
-                    <li>Background images need to repeat</li>
-                    <li>Large images can still break</li>
-                    <li>Be careful with fixed images overlapping content</li>
+                    <li class="fragment fade-in">Background images need to repeat</li>
+                    <li class="fragment fade-in">Large images can still break</li>
+                    <div class="thumbs fragment zoom-in hideafter" >
+                        <img class="big-img" src="img/screenshots/header-image-bad.png">
+                    </div>
+                    <li class="fragment fade-in">Be careful with fixed images overlapping content</li>
                 </ul>
                 <aside class="notes">
                     <ul>
@@ -101,9 +107,21 @@
             <section id="flex-expand">
                 <h2>Expanding content</h2>
                 <ul class="info">
-                    <li>Content is predicted by the user</li>
-                    <li>Headers - long words</li>
-                    <li>Content - 300px 3 columns</li>
+                    <li class="fragment fade-in">Content is predicted by the user</li>
+                    <div class="thumbs fragment zoom-in hideafter" >
+                        <img class="big-img" src="img/screenshots/content-user-gen.png">
+                    </div>
+                    <li class="fragment fade-in">Headers - long words</li>
+                    <div class="thumbs fragment zoom-in hideafter" >
+                        <img class="big-img" src="img/screenshots/header-image-no-wrap.png">
+                    </div>
+                    <div class="thumbs fragment zoom-in hideafter" >
+                        <img class="big-img" src="img/screenshots/header-image-word-wrap.png">
+                    </div>
+                    <li class="fragment fade-in">Content - 300px 3 columns</li>
+                    <div class="thumbs fragment zoom-in hideafter" >
+                        <img class="big-img" src="img/screenshots/content-300px3.png">
+                    </div>
                 </ul>
                 <aside class="notes">
                     <ul>
@@ -129,15 +147,15 @@
             <section id="opt-images">
                 <h2>Avoid large background images</h2>
                 <ul class="info">
-                    <li>Slow load times</li>
-                    <li>Problems switching between themes</li>
-                    <li>Compression software, like <a href="http://kraken.io/">kraken</a></li>
+                    <li class="fragment fade-in">Slow load times</li>
+                    <li class="fragment fade-in">Problems switching between themes</li>
+                    <li class="fragment fade-in">Compression software, like <a href="http://kraken.io/">kraken</a></li>
                 </ul>
                 <aside class="notes">
                     <ul>
                         <strong>NOTES</strong>
-                        <li>The larger the image,the longer it'll take to load, especially on iPads</li>
-                        <li>as themes are dynamically loaded, we can't preload images like we do in the rest of the platform</li>
+                        <li>The larger the image,the longer it'll take to load, especially on iPads.</li>
+                        <li>As themes are dynamically loaded, we can't preload images like we do in the rest of the platform.</li>
                         <li>Optimise your image as best you can to keep file sizes low, Kraken is a great example of an online image compression tool.</li>
                     </ul>
                 </aside>
@@ -146,8 +164,11 @@
             <section id="opt-filesizes">
                 <h2>File sizes</h2>
                 <ul class="info">
-                    <li>Combined files 800kb or lower</li>
-                    <li>Need to be packaged up</li>
+                    <li class="fragment fade-in">Combined files 800kb or lower</li>
+                    <div class="thumbs fragment zoom-in hideafter" >
+                        <img class="big-img" src="img/screenshots/file-sizes-802kb.png">
+                    </div>
+                    <li class="fragment fade-in">Need to be packaged up</li>
                 </ul>
                 <aside class="notes">
                     <ul>
@@ -161,9 +182,15 @@
             <section id="opt-fonts">
                 <h2>Embed custom fonts</h2>
                 <ul class="info">
-                    <li><a href="http://www.fontsquirrel.com/tools/webfont-generator">Font Squirrel</a> generator</li>
-                    <li>Download and embed Google fonts</li>
-                    <li>Header base sizes</li>
+                    <li class="fragment fade-in"><a href="http://www.fontsquirrel.com/tools/webfont-generator">Font Squirrel</a> generator</li>
+                    <div class="thumbs fragment zoom-in hideafter" >
+                        <img class="big-img" src="img/screenshots/font-embeded-fontsquirrel-gen.png">
+                    </div>
+                    <li class="fragment fade-in">Download and embed Google fonts</li>
+                    <li class="fragment fade-in">Header base sizes</li>
+                    <div class="thumbs fragment zoom-in hideafter" >
+                        <img class="landscape" src="img/screenshots/font-embeded-size-bad.png">
+                    </div>
                 </ul>
                 <aside class="notes">
                     <ul>
@@ -178,8 +205,14 @@
             <section id="opt-css">
                 <h2>CSS over Images</h2>
                 <ul class="info">
-                    <li>CSS box shadows, rounded corners &amp; more<a href="http://css3generator.com/"> css3generator.com</a></li>
-                    <li>CSS gradients<a href="http://www.colorzilla.com/gradient-editor/"> Ultimate CSS Gradient Generator</a></li>
+                    <li class="fragment fade-in">CSS box shadows, rounded corners &amp; more<a href="http://css3generator.com/"> css3generator.com</a></li>
+                    <div class="thumbs fragment zoom-in hideafter" >
+                        <img class="big-img" src="img/screenshots/css3-gen.png">
+                    </div>
+                    <li class="fragment fade-in">CSS gradients<a href="http://www.colorzilla.com/gradient-editor/"> Ultimate CSS Gradient Generator</a></li>
+                    <div class="thumbs fragment zoom-in hideafter" >
+                        <img class="big-img" src="img/screenshots/css-grad-gen.png">
+                    </div>
                 </ul>
                 <aside class="notes">
                     <ul>
@@ -197,15 +230,16 @@
             <section id="structure-intro">
                 <h2>Structure <span>.EJS, HTML, CSS, LESS, Navigation, Theme builder</span></h2>
                 <aside class="notes">
-                    <p><strong>NOTES</strong><br />A Theme's directory is system generated and is stored in FrogOS/internal/theme/theme folder/. The Theme is then called using JavaScript within FrogOS. In a theme directory there is no support for subfolders so all images etc. need to be in the root folder - this will be changing soon.</p>
+                    <p><strong>NOTES</strong><br />A Theme's directory is system generated and is stored within FrogOS. The Theme is then called using JavaScript. In a theme directory there is no support for subfolders so all images etc. need to be in the root folder - this will be changing soon.</p>
                 </aside>
             </section><!-- /structure-intro -->
 
             <section id="structure-ejs">
                 <h2>.ejs = embedded javascript</h2>
                 <ul class="info">
-                    <li>Combines data and a template to produce HTML</li>
-                    <li>This type of file is readable by FrogOS</li>
+                    <li class="fragment fade-in">Combines data and a template to produce HTML</li>
+                    <li class="fragment fade-in">This type of file is readable by FrogOS</li>
+                    <li class="fragment fade-in">Use <%=DIR%> to call images</li>
                 </ul>
                 <aside class="notes">
                     <ul>
@@ -218,9 +252,15 @@
             <section id="structure-LESS">
                 <h2>Build in LESS for scoped CSS</h2>
                 <ul class="info">
-                    <li><a href="http://lesscss.org/">Use LESS</a> if you can.</li>
-                    <li><a href="http://crunchapp.net/">Crunch</a> is a great Less compiler</li>
-                    <li>CSS should always have a unique wrapper class</li>
+                    <li class="fragment fade-in"><a href="http://lesscss.org/">Use LESS</a> if you can.</li>
+                    <div class="thumbs fragment zoom-in hideafter" >
+                        <img class="landscape" src="img/screenshots/ues-less.gif">
+                    </div>
+                    <li class="fragment fade-in"><a href="http://crunchapp.net/">Crunch</a> is a great Less compiler</li>
+                    <div class="thumbs fragment zoom-in hideafter" >
+                        <img class="landscape" src="img/screenshots/use-crunch.jpg">
+                    </div>
+                    <li class="fragment fade-in">CSS should always have a unique wrapper class</li>
                 </ul>
                 <aside class="notes">
                     <ul>
@@ -234,9 +274,12 @@
             <section id="structure-nav">
                 <h2>Navigation</h2>
                 <ul class="info">
-                    <li>Cheat!</li>
-                    <li>No unique classes</li>
-                    <li>Remember the + page tab</li>
+                    <li class="fragment fade-in">Cheat!</li>
+                    <div class="thumbs fragment zoom-in hideafter" >
+                        <img class="landscape" src="img/screenshots/lego-robber.jpg">
+                    </div>
+                    <li class="fragment fade-in">No reusable classes</li>
+                    <li class="fragment fade-in">Remember the + page tab</li>
                 </ul>
                 <aside class="notes">
                     <ul>
@@ -250,11 +293,14 @@
 
             <section id="structure-themebuilder">
                 <h2>Theme builder <available here></h2>
-                <ul class="info">
+                <ul class="info fragment fade-in">
                     <li>Download</li>
                     <li>Host</li>
                     <li>Run</li>
                 </ul>
+                <div class="thumbs fragment zoom-in hideafter" >
+                    <img class="landscape" src="img/screenshots/theme-builder.png">
+                </div>
                 <aside class="notes">
                     <ul>
                         <strong>NOTES</strong>
@@ -279,8 +325,11 @@
             <section id="compat-colours">
                 <h2>Text colours</h2>
                 <ul class="info">
-                    <li>White text on white backgrounds</li>
-                    <li>Widget colours</li>
+                    <li class="fragment fade-in">White text on white backgrounds</li>
+                    <div class="thumbs fragment zoom-in hideafter" >
+                        <img class="landscape" src="img/screenshots/font-head-color-bad.png">
+                    </div>
+                    <li class="fragment fade-in">Widget colours</li>
                 </ul>
                 <aside class="notes">
                     <ul>
@@ -293,7 +342,7 @@
 
             <section id="compat-nojs">
                 <h2>No javascript</h2>
-                <ul class="info">
+                <ul class="info fragment fade-in">
                     <li>Frog OS is built with Javascript</li>
                     <li>Conflicts</li>
                     <li>Use .classes not #ids</li>
@@ -310,10 +359,12 @@
             <section id="compat-browsers">
                 <h2>Browser support</h2>
                 <ul class="info">
-                    <li>No more IE7!</li>
-                    <li>All CSS2 &amp; most CSS3 supported</li>
-                    <li>Graceful degradation</li>
-                    <li>Basically...avoid IE </li>
+                    <li class="fragment fade-in">No more IE7!</li>
+                    <div class="thumbs fragment zoom-in hideafter" >
+                        <img class="landscape" src="img/screenshots/no-more-ie7.jpg">
+                    </div>
+                    <li class="fragment fade-in">All CSS2 &amp; most CSS3 supported</li>
+                    <li class="fragment fade-in">Graceful degradation</li>
                 </ul>
                 <aside class="notes">
                     <ul>
@@ -325,23 +376,17 @@
             </section><!-- /compat-nav -->
         </section><!-- /compatibility -->
 
+        <section id="end">
+            <h2>&lt;/END&gt; </h2>
+        </section><!-- /compat-intro -->
+
     </div><!-- /slides -->
     <div class="progress" style="display: block;"><span></span></div>
 </div><!-- /reveal -->
 
-<div id="modal1" class="modal"><img class="big-img" src="img/screenshots/structure-less.png"></div>
-
 <script src="lib/js/head.min.js"></script>
 <script src="js/reveal.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-<script src="js/jquery.easyModal.js"></script>
 <script>
-    $('#open-modal1').click(function(e){
-        $('#modal1').trigger('openModal');
-        e.preventDefault();
-    });
-    $('#modal1').easyModal();
-
     Reveal.initialize({
         width: 1024,
         height: 768,
@@ -362,6 +407,22 @@
             { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
         ]
     });
+
+    var hideOnNextFragment = false;
+
+    Reveal.addEventListener( 'fragmentshown', function( event ) {
+        if(hideOnNextFragment) { // if it's been set last time
+            event.fragment.previousElementSibling.classList.add('active');
+        }
+
+        hideOnNextFragment = event.fragment.classList.contains('hideafter');
+    } );
+
+    Reveal.addEventListener( 'fragmenthidden', function( event ) {
+        if(event.fragment.classList.contains('hideafter')) {
+            event.fragment.classList.remove('active');
+        }
+    } );
 
 </script>
 
